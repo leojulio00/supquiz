@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Quiz</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <div><h2>SupaQuiz</h2></div>
+  </header>
+  <main class="content">
+    <div id="pBar"><div class="greenB"></div></div>
+    
+    <p><h1>Teste o teu <u>conhecimento</u></h1></p>
+    
+    
+    <div class="cards">
+      
+      <div class="card card0 active">
+        <h3>Bem-vindo ao SupaQuiz</h3>
+        <button id="comecar">Começar</button>
+      </div>
+    
+    <div class="card card1">
+      <h3>Wual é o significado da sigla HTML</h3>
+      <button onclick="mudar()">Hypertext Manual Language</button>
+      <button onclick="mudar()">Hipertext Mail Language</button>
+      <button id="res" onclick="mudar()">Hypertext Markup Language</button>
+      <button onclick="mudar()">Hypertext Mark Language</button>
+    </div>
+    
+    <div class="card card2">
+      <h3>Qual é a melhor forma de declarar uma variável em JavaScript</h3>
+      <button onclick="mudar1()">var swich = "something";</button>
+      <button id="res" onclick="mudar1()">let _nome = "something";</button>
+      <button onclick="mudar1()">const 123 = "something";</button>
+      <button onclick="mudar()">var *nome = "something";</button>
+    </div>
+    
+    <div class="card card3">
+      <h3>Qual das alternativas é igual a <b>result+=value;</b></h3>
+      <button onclick="mudar2()">result = ++value</button>
+      <button onclick="mudar2()">result = value</button>
+      <button id="res" onclick="mudar2()">result = result + value</button>
+      <button onclick="mudar2()">result = value + value</button>
+    </div>
+    
+    <div class="card card4">
+      <h3>Qual é o resultado de <b>const result = "2009" - "1995";</b></h3>
+      <button onclick="mudar3()">Throw a TypeError</button>
+      <button id="res" onclick="mudar3()">14</button>
+      <button onclick="mudar3()">NaN</button>
+      <button onclick="mudar3()">undefined</button>
+    </div>
+    
+    <div class="card card5">
+      <h3>Qual é a forma correcta da sintaxe de comentário em JavaScript</h3>
+      <button onclick="mudar4()"><< comentario >></button>
+      <button  onclick="mudar4()"> / comentario / </button>
+      <button onclick="mudar4()"> >> comentario << </button>
+        <button id="res" onclick="mudar4()"> /* comentario */ </button>
+    </div>
+      
+      <div class="card">
+        <h3>Acertou</h3>
+        <h1 id="placard">00%</h1>
+        <div class="estat">
+          <p>Erros: <span id="erros">5</span></p>
+          <p>Acertos: <span id="acertos">0</span></p>
+        </div>
+      </div>
+    
+  </div>
+    
+  </main>
+  <!--<footer>
+    <h4>&copy Todosos direitos reservados - ByLeoJúlio</h4>
+  </footer>-->
+  
+  <script src="scripts/script.js">
+  
+  </script>
+  
+</body>
+</html>

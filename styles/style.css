@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  height: 100vh;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+main{
+  height: 70%;
+}
+
+#pBar{
+  height: 5px;
+}
+
+.greenB{
+  position: relative;
+  height: 100%;
+  width: 0%;
+  background: lightgreen;
+  border-radius: 0px 10px 10px 0px;
+  nimation: greenBar 5s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+main h1{
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.cards{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card{
+  min-width: 270px;
+  max-width: 400px;
+  padding: 20px;
+  margin: 25px;
+  background: #3d3d3d;
+  box-shadow: 0px 0px 6px #181818;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  opacity: 0;
+  animation: aparecer 1s ease-in-out;
+  text-align: center;
+}
+
+.card h3{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card button{
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: 3px solid lightgreen;
+  border-radius: 5px;
+  padding: 7px;
+  margn: 10px;
+  color: lightgreen;
+  outline: none;
+}
+
+button :hover{
+  background: lightgreen;
+  border: none;
+  color: white;
+}
+
+.card h1{
+  font-size: 70px;
+  color: lightgreen;
+}
+
+.cards .estat{
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-around;
+  margin: 20px 10px 35px 10px;
+}
+
+.active{
+  opacity: 1;
+  display: block;
+}
+
+
+@keyframes aparecer{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes greenBar{
+  from{
+    width: 0%;
+  }
+  
+  to{
+    width: 100%;
+  }
+}
+
+
